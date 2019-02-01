@@ -1,0 +1,444 @@
+/*css primera pagina*/
+
+body{
+    background-color: white;
+}
+
+.uno{
+    grid-area: menu;
+    background-color: #C3044F;
+    padding: 10px;
+    text-align: right;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+}
+
+
+.dos{
+    grid-area: oferta;
+    background-image: url(../imagenes/oferta.jpg);
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+    
+    background-size: 100% 110%;
+}
+
+.dos:hover{
+ 
+    background-size: 150% 150%;
+    transition: 5s;
+    
+}
+
+.tres{
+    grid-area: lateralarriba;
+    background-image:  url("../imagenes/yo.png");
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+    background-size: 100% 100%;
+    filter: brightness(1.5);
+    width: 199%;
+    height: 100%;
+}
+.tres:hover{
+    background-image: url("../imagenes/combate.jpg");
+    transition: 5s;
+}
+.cuatro{
+    grid-area: lateralabajo;
+    height: 100%;
+    
+}
+
+
+.imagen2{
+    width: 100%;
+    height: 100%;
+    background-image:  url(../imagenes/karate.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    filter: sepia(1);    
+   
+}
+.imagen2:hover{
+    background-image: url("../imagenes/combate.jpg");
+    transition: 5s;
+    filter: none;
+}
+
+.cinco{
+    grid-area: pie;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+
+
+.contenedor{
+    width: 100vw;
+    margin: 0 auto;
+    background-color: white;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-areas: 
+    'menu menu menu menu'
+    'oferta oferta lateralarriba lateralarriba'
+    'oferta oferta lateralabajo lateralabajo'
+    'pie pie pie pie';
+    padding: 20px;
+    height: 100vh;
+}
+
+
+a{
+    font-size: 70%;
+    color:black;
+}
+
+/*css segunda pagina*/
+
+.contenedor2{
+    width: 80vw;
+    margin: 0 auto;
+    height:45vw;
+    margin-top: 5px;
+    margin-left: 10%;
+    
+}
+.contenedor3{
+   
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.contenedor4{
+    width: 33%;
+    margin: 0 auto;
+    height: 90%;
+    float: left;
+
+}
+
+
+.contenedor5{
+    width: 33%;
+    margin: 0 auto;
+    height: 90%;
+    float: left;
+
+}
+
+.contenedor6{
+    width: 33%;
+    margin: 0 auto;
+    height: 90%;
+    float: left;
+
+}
+
+#contenedor41{
+    background-image: url(../imagenes/karate1.jpg);
+    width: 90%;
+    height: 70% ;
+    background-size: 100% 100%;
+}
+#contenedor41:hover{
+ 
+    background-size: 150% 150%;
+    transition: 5s;
+    
+}
+
+#contenedor42{
+    background-image: url(../imagenes/karate2.jpg);
+    width: 90%;
+    height: 30% ;
+    background-size: 100% 100%;
+}
+#contenedor42:hover{
+ 
+    background-size: 150% 150%;
+    transition: 5s;
+    
+}
+
+#contenedor51{
+    background-image: url(../imagenes/karate3.png);
+    width: 90%;
+    height: 25% ;
+    background-size: 100% 100%;
+}
+#contenedor51:hover{
+ 
+    background-size: 150% 150%;
+    transition: 5s;
+    
+}
+
+#contenedor52{
+    background-image: url(../imagenes/karate4.jpg);
+    width: 90%;
+    height: 28% ;
+    background-size: 100% 100%;
+}
+#contenedor52:hover{
+ 
+    background-size: 150% 150%;
+    transition: 5s;
+    
+}
+
+#contenedor53{
+    background-image: url(../imagenes/karate5.jpg);
+    width: 90%;
+    height: 40% ;
+    background-size: 100% 100%;
+}
+#contenedor53:hover{
+ 
+    background-size: 150% 150%;
+    transition: 5s;
+    
+}
+
+#contenedor61{
+    background-image: url(../imagenes/karate6.png);
+    width: 90%;
+    height: 30% ;
+    background-size: 100% 100%;
+}
+#contenedor61:hover{
+ 
+    background-size: 150% 150%;
+    transition: 5s;
+    
+}
+
+#contenedor62{
+    background-image: url(../imagenes/karate7.jpg);
+    width: 90%;
+    height: 70% ;
+    background-size: 100% 100%;
+}
+#contenedor62:hover{
+ 
+    background-size: 150% 150%;
+    transition: 5s;
+    
+}
+
+/*css tercera pagina*/
+
+#contenedorvideos{
+    width: 90vw;
+    height: 40vw;
+    background-color: white;
+    margin-left: 6%;
+    margin-top: 3%;
+}
+#uno{
+    width: 28vw;
+    height: 18vw;
+    background-color: white;
+    float: left;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    
+}
+#uno1{
+    width: 28vw;
+    height: 12vw;
+    background-image: url(../imagenes/video1.jpg); 
+    background-size: 100% 100%; 
+    float: top;
+
+}
+#uno2{
+   
+    text-align: center;
+    margin-top: 1.2em;
+    font-size: 1.5em;
+}
+#uno:hover{
+    box-shadow: .4em .4em .4em;
+}
+#dos{
+    width: 28vw;
+    height: 18vw;
+    background-color: white;
+    float: left;
+    margin-right: 1%;
+    margin-bottom: 1%;
+}
+#dos1{
+    width: 28vw;
+    height: 12vw;
+    background-image: url(../imagenes/video2.jpg); 
+    background-size: 100% 100%; 
+    float: top;
+
+}
+#dos2{
+    
+    text-align: center;
+    margin-top: 1.2em;
+    font-size: 1.5em;
+}
+#dos:hover{
+    box-shadow: .4em .4em .4em;
+}
+#tres{
+    width: 28vw;
+    height: 18vw;
+    background-color: white;
+    float: left;
+    margin-bottom: 1%;
+}
+#tres1{
+    width: 28vw;
+    height: 12vw;
+    background-image: url(../imagenes/video3.jpg); 
+    background-size: 100% 100%; 
+    float: top;
+
+}
+#tres2{
+    
+    text-align: center;
+    margin-top: 1.2em;
+    font-size: 1.5em;
+}
+#tres:hover{
+    box-shadow: .4em .4em .4em;
+}
+#cuatro{
+    width: 28vw;
+    height: 18vw;
+    background-color: white;
+    float: left;
+    margin-right: 1%;
+    
+}
+#cuatro1{
+    width: 28vw;
+    height: 12vw;
+    background-image: url(../imagenes/video4.jpeg);
+    background-size: 100% 100%; 
+    float: top;
+
+}
+#cuatro2{
+    
+    text-align: center;
+    margin-top: 1.2em;
+    font-size: 1.5em;
+}
+#cuatro:hover{
+    box-shadow: .4em .4em .4em;
+}
+#cinco{
+    width: 28vw;
+    height: 18vw;
+    background-color: white;
+    float: left;
+    margin-right: 1%;
+    
+}
+#cinco1{
+    width: 28vw;
+    height: 12vw;
+    background-image: url(../imagenes/video5.jpg); 
+    background-size: 100% 100%; 
+    float: top;
+
+}
+#cinco2{
+    
+    text-align: center;
+    margin-top: 1.2em;
+    font-size: 1.5em;
+}
+#cinco:hover{
+    box-shadow: .4em .4em .4em;
+}
+#seis{
+    width: 28vw;
+    height: 18vw;
+    background-color: white;
+    float: left;
+}
+#seis1{
+    width: 28vw;
+    height: 12vw;
+    background-image: url(../imagenes/video6.jpg); 
+    background-size: 100% 100%; 
+    float: top;
+
+}
+#seis2{
+    
+    text-align: center;
+    margin-top: 1.2em;
+    font-size: 1.5em;
+}
+#seis:hover{
+    box-shadow: .4em .4em .4em;
+}
+
+/*css cuarta pagina*/
+
+#contenedor7{
+    width: 95vw;
+    height: 87vh;
+    background-image: url(../imagenes/fondomuestrario.jpg);
+    margin: 0 auto;
+    background-size: 100% 100%;
+    
+}
+
+#fotos{
+    width: 40%;
+    height: 100%;
+    float: right;
+    border-radius: 50px;
+    
+
+    background-image: url("../imagenes/foto3.jpg");
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+}
+
+#fotos:hover{
+    
+    background-image: url("../imagenes/foto2.jpg");
+    transition: 5s;
+   
+
+}
+
+#texto{
+    width: 20%;
+    height: 30%;
+    float: left;
+    margin-top: 10%;
+    margin-left: 14%;
+    text-align: center;
+    font-size: 130%;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2{
+    font-size: 400%;
+   text-align: start;
+}
