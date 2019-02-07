@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<TITLE>PRACTICA FINAL</TITLE>
+<META charset="UTF-8" />
+<META name="descriptions=" content="">
+<META name="keywords" content="">
+<META name="PSO" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" media="screen" href="estilos/normalizeejfinal.css">
+<link rel="stylesheet" type="text/css" media="screen" href="estilos/estilosejfinal.css">
+<style>
+.mySlides {
+        display: none
+    }
+
+    .w3-left,
+    .w3-right,
+    .w3-badge {
+        cursor: pointer
+    }
+
+    .w3-badge {
+        height: 13px;
+        width: 13px;
+        padding: 0
+    }
+</style>
+
+<body>
+
+        <div class="contenedor">
+                <!--div del menu -->
+                <div class="uno" style="border-bottom:1px solid black">
+        
+                        <span style="color:#B4B4B4">MENU</span>
+                        <a href="indexejfinal.html"><span>inicio</span></a>
+                        <a href="imagenesejfinal.html"><span>imagenes</span></a>
+                        <a href="videosejfinal.html"><span>video</span></a>
+                        <a href=muestrarioejfinal.html><span>muestrario</span></a>
+            
+        
+        
+                </div>
+                <!--en este div se encuentra el texto que cambia a la izquierda y las fotos de la derecha que cambian al pasar el raton  -->
+                <div id="contenedor7">
+        
+                    <div id="texto">
+        
+                        <div class="w3-container">
+                            <h2>KARATE</h2>
+                            
+        
+                        </div>
+        
+                        <div class="w3-content w3-display-container" style="max-width:800px">
+                            <div class="mySlides" style="width:150%">
+                                <p>
+                                    Es un arte marcial tradicional de Okinawa, Japón. Está basado en algunos estilos de las artes
+                                    marciales chinas, o Wu Shu, y en menor medida en otras disciplinas provenientes del sureste
+                                    asiático.
+        
+                                </p>
+        
+                            </div>
+                            <br><br>
+                            <img class="mySlides" src="imagenes/muestrario1.jpg" style="width:100%">
+                            <img class="mySlides" src="imagenes/muestrario2.jpg" style="width:100%">
+                            <br><br>
+                            <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+                                <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+                                <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+                                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+                                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+                                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+                            </div>
+                        </div>
+        
+                        <script>
+                            var slideIndex = 1;
+                    showDivs(slideIndex);
+
+                    function plusDivs(n) {
+                        showDivs(slideIndex += n);
+                    }
+
+                    function currentDiv(n) {
+                        showDivs(slideIndex = n);
+                    }
+
+                    function showDivs(n) {
+                        var i;
+                        var x = document.getElementsByClassName("mySlides");
+                        var dots = document.getElementsByClassName("demo");
+                        if (n > x.length) { slideIndex = 1 }
+                        if (n < 1) { slideIndex = x.length }
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";
+                        }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" w3-white", "");
+                        }
+                        x[slideIndex - 1].style.display = "block";
+                        dots[slideIndex - 1].className += " w3-white";
+
+                        </script>
+        
+        
+                    </div>
+        
+                    <div id="fotos">
+                    </div>
+        
+                </div>
+        
+            </div>
+        
+        
+
+    
+</body>
+
+</html>
